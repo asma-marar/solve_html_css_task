@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task12</title>
+    <style>
+        .page{
+            height: 100vh;
+            background-color: rgb(224, 224, 224);
+            display:grid;
+            grid-template-columns: repeat(10,1fr);
+            grid-template-rows: 100px auto 50px;
+            grid-template-areas: "logo logo nav nav nav nav nav nav nav nav"
+            "side side cont cont cont cont cont cont cont cont"
+            "foot foot foot foot foot foot foot foot foot foot ";
+            justify-content: flex-start;
+        
+        }
+        nav{
+            grid-area: nav ;
+        }
+        section{
+            grid-area: cont;
+        }
+        aside{grid-area: side;}
+        footer{grid-area: foot;}
+
+a:hover{
+    background-color: rgb(177, 171, 171);
+    width: 60px;
+    height: 60px;
+}
+    </style>
+</head>
+<body>
+    <div class="page">
+        <nav>
+            <div style="display: flex;justify-content: space-between;align-items: center;">
+
+            <img src="https://th.bing.com/th/id/OIP.GtocAvzTeBfqAAtah1ZLGwHaCk?w=2600&h=900&rs=1&pid=ImgDetMain" width="200" height="30" style="position: relative;right: 234px;">
+
+            <input type="text" style="width: 400px;height: 30px;" placeholder="search">
+
+            <a style="text-decoration: none;color: black;" href="http://www.google.com">💬</a>
+            <a style="text-decoration: none;color: black;" class="h" href="http://www.google.com">💌</a>
+            <a style="text-decoration: none;color: black;" class="h" href="http://www.google.com">📥</a>
+    </div>
+    <br/>
+    <div style="display: flex;height: 50px;justify-content: space-between;">
+
+        
+        <a style="text-decoration: none;color: black;background-color: rgba(187, 187, 171,0.5);border-radius: 5px;width: 50px;height: 25px;" href="http://www.google.com">All</a><br/>
+        <a style="text-decoration: none;color: black;background-color: beige;border-radius: 5px;width: 50px;height: 25px;" class="h" href="http://www.google.com">Music</a>
+
+        <a style="text-decoration: none;color: black;background-color: beige; border-radius: 5px;width: 50px;height: 25px;" class="h" href="http://www.google.com">Mixes</a>
+
+        <a style="text-decoration: none;color: black;background-color: beige;border-radius: 5px;width: 50px;height: 25px;" href="http://www.google.com">HTML5</a>
+        <a style="text-decoration: none;color: black;background-color: beige;border-radius: 5px;width: 50px;height: 25px;" class="h" href="http://www.google.com">Theme music</a>
+        <a style="text-decoration: none;color: black;background-color: beige;border-radius: 5px;width: 50px;height: 25px;" class="h" href="http://www.google.com">playlist</a>
+
+    </div>
+        </nav>
+
+    <section style="display: flex;justify-content: space-between;align-content:space-between;flex-wrap: wrap;">
+        <iframe width="300" height="200" src="https://www.youtube.com/embed/6bZCaDyimCI?si=o8quOOM4UJgyyzAg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="300" height="200" src="https://www.youtube.com/embed/6bZCaDyimCI?si=o8quOOM4UJgyyzAg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="300" height="200" src="https://www.youtube.com/embed/6bZCaDyimCI?si=o8quOOM4UJgyyzAg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="300" height="200" src="https://www.youtube.com/embed/6bZCaDyimCI?si=o8quOOM4UJgyyzAg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="300" height="200" src="https://www.youtube.com/embed/6bZCaDyimCI?si=o8quOOM4UJgyyzAg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="300" height="200" src="https://www.youtube.com/embed/6bZCaDyimCI?si=o8quOOM4UJgyyzAg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+    <aside>side bar</aside>
+    <footer>foot</footer>
+
+
+
+
+
+
+
+
+
+    </div>
+</body>
+</html>
