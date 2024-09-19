@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task3</title>
+<style>
+.me{
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 100px 100px 300px 100px  ;
+    grid-template-areas:
+    "header header"
+    "sidebar nav "
+    "sidebar article "
+    "footer footer"
+     ;
+     margin: 10px;
+     gap:20px;
+}
+
+h1{ border-radius: 10px;
+    grid-area: header;
+    background-color: rgb(244, 244, 86);
+    color:white
+}
+nav{ border-radius: 10px;
+    grid-area: nav;
+    background-color: aqua;
+    color: white;
+}
+
+aside{grid-area:sidebar ;
+    background-color: orangered;
+    color: white;
+    border-radius: 10px;
+
+}
+section{grid-area: article;
+    background-color: rgb(193, 206, 218);
+    color: white;
+    border-radius: 10px;
+}
+footer{grid-area: footer;
+background-color: rgb(42, 41, 41);
+border-radius: 10px;
+}
+</style>
+
+</head>
+
+
+<body>
+    <div style="text-align: center;" class="me">
+
+    <h1>header</h1>
+    <nav>nav</nav>
+    <aside>sidebar 
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </aside>
+    <section><p>article</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis cupiditate soluta debitis, nesciunt esse voluptatum ad nihil earum necessitatibus dolorum, autem quos provident consequuntur nostrum reiciendis velit. Tenetur, alias sint?
+
+     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, sunt dolore. Eaque non cum minima provident? Dolorem, dolores vitae sunt officia ullam voluptates deleniti labore dolore dolor, incidunt cumque enim?
+    </p></section>
+    <footer>footer</footer>
+
+
+    </div>
+
+</body>
+</html>

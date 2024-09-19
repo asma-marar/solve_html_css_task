@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex & Grid</title>
+    <style>
+        .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    gap: 10px;
+    padding: 10px;
+}
+
+.item {
+    background-color: #E5E4E2;
+    padding: 5px;
+}
+
+.item-sub {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 5px;
+}
+
+.sub {
+    background-color: #C0C0C0;
+    padding: 3px;
+    margin-top: 5px;
+}
+
+.item-horizontal {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    padding: 5px;
+}
+
+.item-vertical {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 5px;
+    gap: 3px;
+}.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    gap: 10px;
+    padding: 10px;
+}
+
+.item {
+    background-color: #E5E4E2;
+    padding: 5px;
+}
+
+.item-sub {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 5px;
+}
+
+.sub {
+    background-color: #C0C0C0;
+    padding: 3px;
+    margin-top: 5px;
+}
+
+.item-horizontal {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    padding: 5px;
+}
+
+.item-vertical {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 5px;
+    gap: 3px;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Item1</div>
+        <div class=" item item-sub">
+            <div class="sub">Sub 1</div>
+            <div class="sub">Sub 2</div>
+            <div class="sub">Sub 3</div>
+            <div class="sub">Sub 4</div>
+        </div>
+
+        <div class="item item-sub">
+            <div class="sub">Sub 1</div>
+            <div class="sub">Sub 2</div>
+            <div class="sub">Sub 3</div>
+            <div class="sub">Sub 4</div>
+        </div>
+
+        <div class="item">Item4</div>
+        <div class="item">Item5</div>
+        <div class="item item-horizontal">
+            <div class="sub">Sub 1</div>
+            <div class="sub">Sub 2</div>
+        </div>
+
+        <div class=" item item-vertical">
+            <div class="sub">Sub 1</div>
+            <div class="sub">Sub 2</div>
+        </div>
+
+        <civ class="item">Item8</civ>
+        <div class="item item-sub">
+            <div class="sub">Sub 1</div>
+            <div class="sub">Sub 2</div>
+            <div class="sub">Sub 3</div>
+            <div class="sub">Sub 4</div>
+        </div>
+
+        <div class="item">Item10</div>
+        <div class="item">Item11</div>
+
+        <div class="item item-sub">
+            <div class="sub">Sub 1</div>
+            <div class="sub">Sub 2</div>
+            <div class="sub">Sub 3</div>
+            <div class="sub">Sub 4</div>
+        </div>
+    </div>
+</body>
+</html>
