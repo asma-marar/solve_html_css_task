@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+    <title>Booking</title>
+</head>
+<style>
+    *{
+        padding: 0%;
+        margin:0%;
+        box-sizing: border-box;
+    }
+.page{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:600px 600px 200px;
+    grid-template-areas: "logo logo"
+    "cont cont"
+    "foot foot";
+    
+}
+
+nav{
+    grid-area: logo;
+    background-color: rgb(4, 4, 144);
+}
+
+section{
+    grid-area: cont;
+    background-color: white;
+}
+
+footer{
+    grid-area: foot;
+    background-color: rgb(233, 232, 232);
+}
+
+.me{
+    padding: 20px 60px 20px 60px;
+    display: grid;
+    grid-template-rows: 100px 100px 200px ;
+
+}
+.a{
+    font-size:20px;
+    text-decoration: none;
+    color:white;
+    padding: 30px 0px 0px 0px;
+    font-family: SUSE, sans-serif;
+    
+}
+.bord{
+    border:1px solid rgb(4, 4, 144);
+    border-radius: 5px;
+    color:rgb(72, 72, 192);
+    background-color: white;
+    width: 100px;
+    height: 40px;
+    padding: 5px;
+    text-align: center;
+    
+}
+.as{
+    color: white;
+    font-family: SUSE, sans-serif;
+    font-size:25px;
+    text-decoration: none;
+    padding: 5px;
+
+
+}
+
+.me2:hover{
+    transform: scale(1.1);
+    background-color: rgb(57, 57, 152);
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    padding: 5px;
+}
+
+.as:hover{
+    transform: scale(1.1);
+    background-color: rgb(57, 57, 152);
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    padding: 5px;
+}
+.all{
+color: white;
+font-family: SUSE, sans-serif;
+font-size: 30px;
+}
+.button{
+    background-color: #078dcb;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 5px;
+    width: 250px;
+    height:70px;
+    color: white;
+    border-radius: 10px;
+    border: 1px solid #078dcb;
+
+
+}
+.fo{
+    text-decoration: none;
+    color: black;
+    line-height: 15px;
+
+}
+</style>
+<body>
+    <div class="page">
+        <nav class="me">
+            <div style="display: flex;flex-direction: row;justify-content: space-between;">
+                
+                   
+                    <p style="font-family: SUSE, sans-serif;
+                    font-weight: bold;color:white;font-size: 30px;">Booking.com</p>
+                    
+                    <div style="display: flex;justify-content:center;"></div>
+
+                    <div style="justify-content: flex-end;">
+                    <a class="a me2" href="http://www.google.com">List your property</a>
+                    
+                    <a class="a bord" href="http://www.google.com">Register</a>
+                    
+                    <a class="a bord" href="http://www.google.com">Sign in</a>
+               
+                     </div>
+            </div>
+
+            <div>
+                <div  style="justify-content: flex-start;">
+                    <a class="as" style="border: 1px solid white;border-radius: 15px;padding: 5px;" href="http://www.google.com">Stays</a>
+                    <a class="as" href="http://www.google.com">Flighet</a>
+                    <a class="as" href="http://www.google.com">Car rental</a>
+                    <a class="as" href="http://www.google.com">Attractions</a>
+                    <a class="as" href="http://www.google.com">Airport taxi</a>
+                </div>
+
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr;">
+                <div>
+                <p style="font-size: 40px;font-weight: bold;color: white;font-family: SUSE, sans-serif;
+">Sign in, save money</p>
+                <p class="all" >save 10% or more at participiting properties-just look for the blue Genius lable.</p>
+                <br/>
+                <button class="button" type="button"><a class="a" href="http://www.google.com">Sign in or register</a></button>
+            </div>
+
+            <div style="display:grid;grid-template-columns: repeat(3,1fr);">
+            <img src="https://q-xx.bstatic.com/xdata/images/xphoto/300x300/373176332.png?k=aed69e83328ce8e09774d713961bb0ce1d0d196c2da2a7ec682e2eeab8f6b69b&o=" width="300" height="300"
+            style="grid-column: 2/3;">
+            <br/>
+            <p style="grid-row: 2/3;grid-column: 2/3;color: white;">Booking.com's loyalty program <span style="color: white;font-weight: bold;font-size: 20px;">Genius</span>
+            </p> 
+        
+        </nav>
+
+
+        <section style="padding: 60px 0px 0px 60px;">
+           <div >
+            <h1>Offers</h1>
+            <p>Promotions, deals, and special offers for you </p>
+
+            <div style="display: flex;margin: 10px;">
+                <div style="background-image: url('https://r-xx.bstatic.com/xdata/images/xphoto/714x300/350960127.jpeg?k=e2732d40882766c8edd0001d7cca566de1d43af2d117b964f2e3ccf579d9a498&o=');height:200px;width: 48%;border-radius: 5px;background-repeat: no-repeat;background-size: cover;margin:0px 10px 0px 0px;padding: 15px;">
+                    <p style="color: white;font-size: 20px;">seize the moment</p>
+                    <p style="color: white;">save 15% more when you book and stay before october1,2024
+                    </p>
+                    <br/>
+                    <button class="button" type="button"><a class="a" href="http://www.google.com">Finde Getway Deals</a></button>
+                </div>
+
+                <div style="background-color: white; height:200px; width: 48%; border-radius: 5px;border: 1px black solid;margin:0px 0px 0px 10px;padding: 15px;">
+                    <div style="display: flex;flex-direction: row;">
+                        <div>
+                            <p>Go for a good time, not a long time</p>
+                            <p>Finish your year with a mini break. Save 15% or more when you book and stay by January 7,2025</p>
+                            <br/>
+                            <button class="button" type="button"><a class="a" href="http://www.google.com">Find Late Escape Deals</a></button>
+                        
+                        </div>
+                            <di>
+                                <img src="https://q-xx.bstatic.com/xdata/images/xphoto/500x500/372051085.jpeg?k=f5182852fa2c998e2b47cfd922da41ae16c42beb02fb70ecb57ee55ced3271f6&o=" width="150" height="150px" style="border-radius: 5px;">
+                            </di>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+        <div style="display:flix;margin:40px 0px 0px 0px;">
+            <img src="https://q-xx.bstatic.com/xdata/images/xphoto/263x210/45450090.jpeg?k=52f6b8190edb5a9c91528f8e0f875752ce55a6beb35dc62873601e57944990e4&o=" width="24%" height="200px" style="padding: 5px;border-radius: 5px;">
+
+            <img src="https://q-xx.bstatic.com/xdata/images/xphoto/263x210/45450074.jpeg?k=7039b03a94f3b99262c4b3054b0edcbbb91e9dade85b6efc880d45288a06c126&o=" width="24%" height="200px" style="padding: 5px;border-radius: 5px;">
+
+            <img src="https://q-xx.bstatic.com/xdata/images/xphoto/263x210/45450082.jpeg?k=beb101b827a729065964523184f4db6cac42900c2415d71d516999af40beb7aa&o=" width="24%" height="200px" style="padding: 5px;border-radius: 5px;">
+
+            <img src="https://q-xx.bstatic.com/xdata/images/xphoto/263x210/45450279.jpeg?k=cb9ab85ffe439f3030e00281f2d52583a398bf076e54f00f746e1d1baf62bf6e&o=" width="24%" height="200px" style="padding: 5px;border-radius: 5px;border: 2px solid white;">
+
+
+        </div>
+
+        </div>
+        </section>
+        <footer style="padding: 20px 60px 20px 60px;gap:30px">
+            <div style="display: grid;grid-template-columns: repeat(5,1fr);">
+                <div><h3>Support</h3>
+                    <br/>
+                  <a class="fo" href="http://www.google.com">Coronavirus (COVID-19)</a> 
+                
+                  <a class="fo" href="http://www.google.com">Manage your trips</a>
+                 
+                  <a class="fo" href="http://www.google.com">Contact Customer Service</a> 
+                
+                  <a class="fo" href="http://www.google.com">Saftey Resource Center</a> 
+                </div>
+
+                <div><h3>Discover</h3>
+                    <br/>
+                    <a class="fo" href="http://www.google.com">Genuis loyalty program</a> 
+                    <a class="fo" href="http://www.google.com">Seasonal and holiday deals</a> 
+                    <a class="fo" href="http://www.google.com">Travel articles</a> 
+                    <a class="fo" href="http://www.google.com">Booking.com for Business</a> 
+                    <a class="fo" href="http://www.google.com">Travel Review Awards</a> 
+                    <a class="fo" href="http://www.google.com">Flight finder</a> 
+                    <a class="fo" href="http://www.google.com">Restaurant reservation</a> 
+                    <a class="fo" href="http://www.google.com">Car rental</a> 
+                    <a class="fo" href="http://www.google.com">Bookind.com for travel Agents</a> 
+
+                </div>
+                <div>
+                    <h3>Terms and Settings</h3>
+                    <br/>
+                    <a class="fo" href="http://www.google.com">Privacy & cookies</a> 
+                    <a class="fo" href="http://www.google.com">Terma & conditions</a> 
+                    <a class="fo" href="http://www.google.com">Partner Dispute</a> 
+                    <a class="fo" href="http://www.google.com">Modern slavery</a> 
+                    <a class="fo" href="http://www.google.com">Human Rights Statement</a> 
+                </div>
+                <div><h3>Partner</h3>
+                    <br/>
+                    <a class="fo" href="http://www.google.com">Extanet login</a> 
+                    <a class="fo" href="http://www.google.com">Partner help</a> 
+                    <a class="fo" href="http://www.google.com">List your property</a> 
+                    <a class="fo" href="http://www.google.com">Become an affiliate</a> 
+                </div>
+                <div><h3>About</h3>
+                    <br/>
+                    <a class="fo" href="http://www.google.com">How We Work</a> 
+                    <a class="fo" href="http://www.google.com">Sustainability</a> 
+                    <a class="fo" href="http://www.google.com">Press center</a> 
+                    <a class="fo" href="http://www.google.com">Careers</a> 
+                    
+                </div>
+            </div>
+        </footer>
+
+
+
+    </div>
+</body>
+</html>
